@@ -1,0 +1,28 @@
+package l04_Introducing_Objects_75_gobackfor_Activities;
+
+import l04_Introducing_Objects_P3.Actor;
+import l04_Introducing_Objects_P3.Weapon;
+
+public class RolePlayingGame {
+	
+	public void Role() {
+		
+		Weapon sword = new Weapon("Sword", "slashes",  10);
+        Weapon bite = new Weapon("Bite", "bites", 5);
+        Actor knight = new Actor("Sir Glegane", 20, 5, sword);
+        Actor snake = new Actor("Viper", 10, 1, bite);
+        System.out.println(knight);
+        System.out.println(snake);
+        int damage = snake.weapon().hitDamage();
+        knight.takeDamage(damage);
+        System.out.printf("%s %s for %d damage.\n", snake.name(), snake.weapon().action(),damage); 
+        damage = knight.weapon().hitDamage();
+        System.out.printf("%s %s for %d damage.\n", knight.name(), knight.weapon().action(),damage); 
+        snake.takeDamage(damage);
+        System.out.println(knight);
+        System.out.println(snake); 
+		
+	}
+	
+
+}
