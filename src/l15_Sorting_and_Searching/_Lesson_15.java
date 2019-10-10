@@ -21,22 +21,6 @@ public class _Lesson_15 {
 
 	}
 
-	public float avg(float[] numbers) {
-		int Size = numbers.length;  // big O(3)
-		float avg = 0, total = 0;
-
-		for (int i = 0; i < Size; i++) {
-			total = numbers[i];      // big O(n) number of elements
-
-		}
-
-		return avg = total / Size; // big O(1)
-		
-		// runtime complexity 
-		// O(3 + 1 + n) // one might be represented by the increment
-		// O(n) is progressing linearly the more elements to more operations
-
-	}
 	
 	
 	
