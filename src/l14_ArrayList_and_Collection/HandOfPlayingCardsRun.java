@@ -47,22 +47,22 @@ import l14_ArrayList_and_Collection_P3.*;
 
 public class HandOfPlayingCardsRun {
     
-   public void Hand() { 
-	   int seed = 99;
-       Deck d = new Deck(1,seed);
-       Hand h = new Hand();
-
-       System.out.printf("Random number seed : %d\n",seed);
-       System.out.printf("New Deck(%2d)\t: %s\n",d.cardCount(), d.toString());
-       d.shuffle();
-       System.out.printf("Shuffled(%2d)\t: %s\n",d.cardCount(), d.toString());       
-       for (int i=0;i<5;i++){
-        h.add(d.deal());
-       }
-       System.out.printf("Your Hand(%2d)\t: %s  Remaining Deck(%2d) : %s\n",h.cardCount(), h.toString(), d.cardCount(), d.toString());
-       
-       System.out.printf("Pair of Queens?\t%s\n", h.rankCount(Ranks.QUEEN)==2);
-       System.out.printf("Three Kings?\t%s\n", h.rankCount(Ranks.KING)==3);
+    public void Hand() { 
+//	   int seed = 99;
+//       Deck d = new Deck(1,seed);
+//       Hand h = new Hand();
+//
+//       System.out.printf("Random number seed : %d\n",seed);
+//       System.out.printf("New Deck(%2d)\t: %s\n",d.cardCount(), d.toString());
+//       d.shuffle();
+//       System.out.printf("Shuffled(%2d)\t: %s\n",d.cardCount(), d.toString());       
+//       for (int i=0;i<5;i++){
+//        h.add(d.deal());
+//       }
+//       System.out.printf("Your Hand(%2d)\t: %s  Remaining Deck(%2d) : %s\n",h.cardCount(), h.toString(), d.cardCount(), d.toString());
+//       
+//       System.out.printf("Pair of Queens?\t%s\n", h.rankCount(Ranks.QUEEN)==2);
+//       System.out.printf("Three Kings?\t%s\n", h.rankCount(Ranks.KING)==3);
    }
     
 }
